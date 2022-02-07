@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+    width: 200px;
+}
+
+.menu-nav > li {
+   list-style: none;
+   margin: 10px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-img {
+    width: 100%;
+    padding-top: 70px;
+}
+
+@media screen and (min-width: 941px) {
+    .menu-nav {
+        display: flex;
+        justify-content: center;
+    }
+}
