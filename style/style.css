@@ -3,13 +3,10 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 
-.logo {
-    width: 200px;
-}
-
 .menu-nav > li {
    list-style: none;
-   margin: 10px;
+   margin-inline: 20px;
+   font-weight: 300;
 }
 
 .fa-bars {
@@ -22,17 +19,99 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .banner-img {
     width: 100%;
-    /* padding-top: 70px; */
+}
+
+.container-title > h1 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contentItems {
+    font-size: 100px;
+    margin: 20px;
+}
+
+.contentItems > img {
+    width: 100px;
+}
+
+.bxs-leaf {
+    color: #0dcaf0;
+}
+
+.bx-heart-circle {
+    color: #ffc107;
+}
+
+
+.bx-happy-heart-eyes {
+    color: #dc3545;
+}
+
+.titleItem {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 941px) {
     .menu-nav {
         display: flex;
         justify-content: center;
+    }
+    
+    .logo {
+    width: 400PXpx;
+    }
+
+    .container-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .containerItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .contentItems {
+        font-size: 150px;
+        margin: 20px;
+    }
+    
+    .contentItems > img {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 940px) {
+    .containerItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-20px);
+        left: -15px;
+        padding-left: 25px;
+        margin-bottom: 0;
+    }
+
+    .menu-nav > li{
+        margin: 30px;
     }
 }
