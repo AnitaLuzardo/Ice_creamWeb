@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Icecream</title>
 </head>
-<body>
-    <nav class="menu">
-        <ul class="menu-nav">
-            <li>HOME</li>
-            <li>CONTACTANOS</li>
-            <li>SABORES</li>
-            <li>REDES</li>
-        </ul>
-        <!-- <i class="fas fa-bars"></i> -->
-    </nav>
+<body> 
+    <header class="container-menu-nav">
+        <nav class="menu_nav" id="menu">
+            <ul class="menuList" >
+                <li>HOME</li>
+                <li>CONTACTANOS</li>
+                <li>SABORES</li>
+                <li>REDES</li>
+            </ul>
+        </nav> 
+        
+        <i class='bx bx-menu-alt-right icon-menu-responsive' id="btnMenu"></i>
+    </header>
+
     <section class="banner-ice">
         <img class="banner-img" src="style/images/best-homemade-ice-cream-recipes-for-Summer-1560x642.jpg" alt="">
     </section>
     <section>
         <div class="container-title">
             <!-- <img class="logo" src="/style/images/Icecream.png" alt=""> -->
-            <h1>Naturally Delicious</h1>
+             <h1>Naturally Delicious</h1>
         </div>
         <section class="containerItems">
             <div class="contentItems">
@@ -46,5 +50,7 @@
             </div>
         </section>
     </section>
+
+    <script src="js/app.js"></script>
 </body>
-</html>
+</html> 
