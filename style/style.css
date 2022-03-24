@@ -30,6 +30,7 @@ html, body{
 .contentItems {
     font-size: 100px;
     margin: 20px;
+    letter-spacing: 0.1em;
 }
 
 .bxs-leaf {
@@ -48,6 +49,53 @@ html, body{
     font-size: 14px;
     text-align: center;
     font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.img-icecream {
+   background-image: url(../style/images/eitingIceCream.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.img-icecream {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation > h1 {
+    font-weight: 100;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.img-icecream {
+    display: flex;
+    justify-content: center;
+}
+
+.ice-cream-us > h2 {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.ice-cream-us > p {
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.content-pic-ice {
+    background-image: url(../style/images/dessert-delicious-ice-cream-on-the-table.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 @media screen and (min-width: 941px) {
@@ -83,6 +131,30 @@ html, body{
 
     .contentItems > img {
         width: 100px;
+    }
+
+    .img-icecream {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+     }
+
+    .presentation > h1 {
+        font-size: 70px;
+        font-weight: 100;
+        text-shadow: 0.1em 0.1em 0.2em black
+    }
+
+    .container-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-logo > img {
+        width: 550px;
     }
 }
 
@@ -134,7 +206,6 @@ html, body{
         justify-content: space-between;
     }
 
-
     .icon-menu-responsive {
         background-color: #0dcaf0;
         width: 100%;
@@ -152,4 +223,19 @@ html, body{
         flex-wrap: wrap;
     }
 
+    .img-icecream {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-logo > img {
+        width: 550px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .img-logo > img {
+        width: 100%;
+    }
 }
