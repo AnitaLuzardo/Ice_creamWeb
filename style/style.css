@@ -4,7 +4,8 @@ html, body{
 }
 
 .menuList {
-    background-color: #0dcaf081;
+    background: linear-gradient(to right, #ec6f66, #f3a183);
+    z-index: 2;
 }
 
 .menuList > li {
@@ -52,31 +53,6 @@ html, body{
     letter-spacing: 0.1em;
 }
 
-.img-icecream {
-   background-image: url(../style/images/eitingIceCream.jpg);
-   height: 100vh;
-   background-repeat: no-repeat;
-   background-size: 100%;
-}
-
-.img-icecream {
-    display: flex;
-    justify-content: center;
-}
-
-.presentation > h1 {
-    font-weight: 100;
-    color: white;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    font-size: 40px;
-    text-align: center;
-}
-
-.img-icecream {
-    display: flex;
-    justify-content: center;
-}
-
 .ice-cream-us > h2 {
     font-size: 30px;
     font-weight: 100;
@@ -90,12 +66,28 @@ html, body{
     letter-spacing: 0.1em;
 }
 
-.content-pic-ice {
-    background-image: url(../style/images/dessert-delicious-ice-cream-on-the-table.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
+.info_content > h1 {
+    font-weight: 300;
+}
+
+.info_content {
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+} 
+
+.title_lact {
+    font-weight: 300;
+}
+
+.position-children {
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 1px
+}
+
+.container_img_pub > img{
+    width: 100%;
 }
 
 @media screen and (min-width: 941px) {
@@ -134,27 +126,66 @@ html, body{
     }
 
     .img-icecream {
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        position: relative;
-     }
-
-    .presentation > h1 {
-        font-size: 70px;
-        font-weight: 100;
-        text-shadow: 0.1em 0.1em 0.2em black
+        display: flex;
+        justify-content: space-between;
     }
 
-    .container-logo {
+    .container_text_content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -5px
+    }
+
+    .contenido-img {
+        width: 50%;
+    }
+    
+    .contenido-img > img {
+        width: 100%;
+    }
+
+    .position_title {
+        width: 50%;
+        position: relative;
+    }
+
+    .position-children {
+        position: absolute;
+        top: 16%;
+        transform: translateY(50px);
+        right: 115px;
+        width: 500px;
+    }
+
+    .text_content {
+        position: relative;
+    }
+
+    .text_content > .info_content {
+        position: absolute;
+        transform: translateY(10px);
+        top: 22%;
+        left: 155px;
+    }
+
+    .info_content {
+        width: 500px;
+    }
+
+    .img_content {
+        width: 50%;
+    }
+
+    .img_content > img{
+        margin-top: -4px;
+        width: 100%;
+    }
+
+    .container_content {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .img-logo > img {
-        width: 550px;
+        height: 450px;
     }
 }
 
@@ -177,7 +208,7 @@ html, body{
         height: 800px;
         padding: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
     }
 
     .menu_nav {
@@ -207,11 +238,16 @@ html, body{
     }
 
     .icon-menu-responsive {
-        background-color: #0dcaf0;
+        background: linear-gradient(to right, #ec6f66, #f3a183);
         width: 100%;
         display: flex;
         justify-content: end;
         position: fixed;
+        z-index: 1;
+    }
+
+    .position_title > h1 {
+        font-size: 40px;
     }
 
     .contentItems > img {
@@ -223,19 +259,58 @@ html, body{
         flex-wrap: wrap;
     }
 
-    .img-icecream {
+    .img_content > img{
+        width: 100%;
+    }
+
+    .container_text_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_content {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 450px;
+    }
+
+    .info_content {
+        width: 70%;
+        text-align: center;
+    }
+
+    .contenido-img > img {
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .position_title {
+        height: 450px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
-    .img-logo > img {
-        width: 550px;
+    .position-children {
+        text-align: center;
+        width: 70%;
     }
 
+    .container_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 550px) {
-    .img-logo > img {
-        width: 100%;
+    .position_title > h1 {
+        font-size: 20px;
+    }
+
+    .container_content {
+        height: 530px;
     }
 }
