@@ -321,4 +321,8 @@ html, body{
     .container_content {
         height: 530px;
     }
+
+    .content-items {
+        height: 100%;
+    }
 }
