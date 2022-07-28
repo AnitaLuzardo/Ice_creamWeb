@@ -31,8 +31,6 @@ html, body{
 }
 
 .showCase {
-    position: relative;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -43,20 +41,8 @@ html, body{
     color: black;
 }
 
-.video_container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #ec6f66;
-}
-
 .video_container video {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+    width: 100%;
 }
 
 .container-title > h1 {
@@ -191,21 +177,25 @@ html, body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-right: 15px;
-        margin-top: 50px;
+        /* margin-right: 15px;
+        margin-top: 50px; */
+        padding: 50px;
     }
 
     .text_content > {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info_content {
+        width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 15px;
-    }
-
-    .info_content {
-        width: 500px;
+        margin: 30px;
     }
 
     .img_content {
